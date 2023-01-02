@@ -1,0 +1,225 @@
+
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+   
+
+}
+
+.header {
+    background-color: $color-white;
+    padding: 1rem;
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+    position: relative;
+    &__logo {      
+       text-align: center;
+       margin: 0;
+       font-family: Shrikhand,"cursive";
+    }
+}
+
+.underheader {
+    background-color: $color-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+    color: darken($color: $color-grey, $amount: 70%);
+    i {
+        padding-right: 1rem;
+    }   
+}
+
+.test {
+    padding: 2rem;
+    padding-bottom: 4rem;
+    background-color: #fafafa;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    &__title{
+        font-size: 1.5rem;
+    }
+    &__subtitle {
+        font-weight: 400;
+        padding-bottom: 1rem;
+      }
+      &__btn{
+        text-decoration: none;        
+        padding: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+        border-radius: 20px;
+        color: white;
+        cursor: pointer;
+      }
+}
+
+
+.fonction{
+    background-color: white;
+    padding: 2rem 1rem;   
+    &__flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    &__number{
+        position: relative;
+        left: 0.9rem;
+        top: 1rem;
+        background-color: $color-primaire;
+        width: 24px;
+        height: 24px;
+        border-radius: 25px;
+        text-align: center;
+        color: $color-white;
+    }
+    &__bg{
+        padding: 1.5rem;
+        width: 80%;
+        margin-top: 2rem;
+        background-color: $color-grey;
+        border-radius: 25px;  
+        &:hover{
+            background-color: #F5EDFF;
+            i{
+                color: $color-primaire;
+            }
+        }
+
+    }
+    i{
+        padding-right: 1rem;
+        padding-left: .5rem;
+        color: grey;
+    }
+    &__bold{
+        font-weight: bold;
+    }
+}
+
+.restaurants{
+    background-color: $color-white;
+    &__title{
+        margin-left: 1rem;
+    }
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+    }
+
+    &__badge{
+            background-color: $color-tertiaire;
+            color: #008766;
+            padding: .5rem;
+            border-radius: .125rem;
+            position: absolute;
+            top: 1rem;
+            right: .75rem;
+            font-weight: bold;
+            
+        }
+    
+    
+    &__content{
+        display: block;
+        position: relative;
+        background-color: $color-white;
+        box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+        margin-bottom: 1rem;
+        border-radius: 20px;
+        a{
+            text-decoration: none;
+            color: black;
+        }    
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+        margin-left: 1rem;
+    }
+    &__subtitle{
+       margin-top: 0;
+       
+       margin-left: 1rem;
+        
+
+    }
+    &__test{
+        display: flex;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    i{
+        font-size: 3vh;
+        top: 1.5rem;
+        right: 1.5rem;
+        position: absolute;
+    }
+}
+
+
+.footers{
+    background-color:#353535;
+    &__flex{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    &__logo{
+        font-family: Shrikhand,"cursive";
+        color: $color-white;
+        font-size: 1.5rem;
+        margin: 0;
+        font-weight: 500;
+    }
+    &__list{
+        list-style: none;
+        padding: 0;
+
+    }
+    a{
+        text-decoration: none;
+        color: $color-white;
+    }
+
+    li{
+        padding-top: 1rem;
+        i{
+            padding-right: 1rem;
+        }
+    }
+}
+
+
+/*
+@media screen and (min-width: 1440px){
+    .breakpoint{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
+    
+*/
+    
+    
