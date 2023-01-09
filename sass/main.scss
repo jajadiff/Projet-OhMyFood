@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import "variable.scss";
-@import "homepage.scss";
-@import "restopage.scss";
+@import "./utils/variable.scss";
+@import "./components/buttons.scss";
+@import "./layouts/homepage.scss";
+@import "./layouts/restopage.scss";
 
 
 

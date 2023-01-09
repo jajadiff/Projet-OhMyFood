@@ -47,22 +47,17 @@ body {
         font-weight: 400;
         padding-bottom: 1rem;
       }
-      &__btn{
-        text-decoration: none;        
-        padding: 1rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
-        border-radius: 20px;
-        color: white;
-        cursor: pointer;
-      }
 }
 
 
 .fonction{
     background-color: white;
-    padding: 2rem 1rem;   
+    padding: 2rem 1rem;
+    &__title{
+            margin-left: 1REM;
+            text-align: start;
+        
+    }
     &__flex{
         display: flex;
         align-items: center;
@@ -170,7 +165,7 @@ body {
         align-items: center;
     }
     i{
-        font-size: 3vh;
+        font-size: 2rem;
         top: 1.5rem;
         right: 1.5rem;
         position: absolute;
@@ -211,16 +206,95 @@ body {
 }
 
 
-/*
-@media screen and (min-width: 1440px){
+/**/
+@media screen and (min-width: 992px){
     .breakpoint{
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
+    .fonction__flex {
+        padding: 0 1rem 0 0;
+    }
+    .card{
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        gap: 3%;
+        justify-content: center;
+        &__content{
+          flex-basis: 40%;
+        }
+        &__test{
+            min-width: 300px;
+        }
+
+     }
+     /**/
+     .footers{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        &__flex{
+            align-items: center;
+            flex-direction: row-reverse;
+            justify-content: center;
+        }
+          
+
+        
+        ul{
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            li{
+                padding: 2rem;
+            }
+        }
+
+  
+     
+
+     }
 
 }
     
-*/
+
+@media screen and (min-width: 1400px){
+    .card{
+        &__content{
+            flex-basis: 0;
+        }
+    }
+    .restaurants{
+            background-color: $color-grey;
+            padding: 2rem 0;
+            &__title {
+                margin-left: 3.3REM;
+                text-align: start;
+            }
+
+       
+
+        .breakpoint{
+            justify-content: start;
+        }
+
+    }
+    .fonction{
+        background-color: white;
+        padding: 2rem 0rem;
+        &__title {
+            margin-left: 3.3REM;
+            text-align: start;
     
+        &__bg {
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+        }
+    }
     
+    }
+    
+}

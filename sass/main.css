@@ -1,5 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*home*/
+.test__btn {
+  text-decoration: none;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/*resto*/
+.btn__resto {
+  display: flex;
+  margin: 1rem;
+  justify-content: center;
+}
+.btn__resto .btn__item {
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
 body {
   font-family: sans-serif;
   margin: 0;
@@ -45,20 +72,14 @@ body {
   font-weight: 400;
   padding-bottom: 1rem;
 }
-.test__btn {
-  text-decoration: none;
-  padding: 1rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  border-radius: 20px;
-  color: white;
-  cursor: pointer;
-}
 
 .fonction {
   background-color: white;
   padding: 2rem 1rem;
+}
+.fonction__title {
+  margin-left: 1REM;
+  text-align: start;
 }
 .fonction__flex {
   display: flex;
@@ -160,7 +181,7 @@ body {
   align-items: center;
 }
 .card i {
-  font-size: 3vh;
+  font-size: 2rem;
   top: 1.5rem;
   right: 1.5rem;
   position: absolute;
@@ -196,17 +217,77 @@ body {
   padding-right: 1rem;
 }
 
-/*
-@media screen and (min-width: 1440px){
-    .breakpoint{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
+/**/
+@media screen and (min-width: 992px) {
+  .breakpoint {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .fonction__flex {
+    padding: 0 1rem 0 0;
+  }
+  .card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3%;
+    justify-content: center;
+  }
+  .card__content {
+    flex-basis: 40%;
+  }
+  .card__test {
+    min-width: 300px;
+  }
+  /**/
+  .footers {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .footers__flex {
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .footers ul {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+  .footers ul li {
+    padding: 2rem;
+  }
 }
-
-*/
+@media screen and (min-width: 1400px) {
+  .card__content {
+    flex-basis: 0;
+  }
+  .restaurants {
+    background-color: #EAEAEA;
+    padding: 2rem 0;
+  }
+  .restaurants__title {
+    margin-left: 3.3REM;
+    text-align: start;
+  }
+  .restaurants .breakpoint {
+    justify-content: start;
+  }
+  .fonction {
+    background-color: white;
+    padding: 2rem 0rem;
+  }
+  .fonction__title {
+    margin-left: 3.3REM;
+    text-align: start;
+  }
+  .fonction__title__bg {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -319,16 +400,22 @@ a {
   padding-left: 0.5rem;
 }
 
-.btn__resto {
-  display: flex;
-  margin: 1rem;
-  justify-content: center;
-}
-.btn__resto .btn__item {
-  text-decoration: none;
-  padding: 1rem 2.5rem;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  border-radius: 20px;
-  color: white;
-  cursor: pointer;
+@media screen and (min-width: 1400px) {
+  .mainmenu {
+    width: 70%;
+    margin: -4rem auto 0 auto;
+  }
+  .menuflex {
+    padding: 0 10rem;
+  }
+  .resto__name {
+    padding: 1rem 10rem;
+    justify-content: center;
+  }
+  .resto__title {
+    padding-right: 1rem;
+  }
+  .menulist {
+    padding: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
