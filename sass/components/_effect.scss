@@ -1,34 +1,30 @@
 .menulist__confirmation{
-    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0 20px 20px 0;  
+    background-color: $color-tertiaire;
+    width: 0;
+    transition: width 0.4s ease 0s;
 }
-
+.menulist__confirmation{
+    i{
+        color: $color-tertiaire;       
+    }
+}
 .menulist__item{
     cursor: pointer;
     &:hover{
-        
-       
+        cursor: pointer;
         .menulist__price{
-            animation: RightLeft 1s ease 0s 1 normal forwards;
-            padding-right: 3rem;
+           
         }
-        .menulist__confirmation{  
+        .menulist__confirmation{
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 3rem;
-            background-color: $color-tertiaire;
-            border-radius: 0 20px 20px 0;
-            top: 0;
-            bottom: 0;
-            position: absolute;
-            right: 0;
+            width: 4rem;
             color: $color-tertiaire;
-            animation: RightLeft 1s ease 0s 1 normal forwards;
-            
-
-            
-            
-            
             i{
                 width: 1.5rem;
                 height: 1.5rem;
@@ -38,37 +34,12 @@
                 justify-content: center;
                 align-items: center;             
                 animation: rotation 400ms linear;
+
+                
                 
                 
             }
-
         }
-
     }
 
-
-    
-
-}
-
-@keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-
-  }
-
-  @keyframes RightLeft {
-	0% {
-		opacity: 0;
-		transform: translateX(1rem);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
 }
