@@ -28,31 +28,31 @@
 }
 
 .menulist__confirmation {
-  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0 20px 20px 0;
+  background-color: #99E2D0;
+  width: 0;
+  transition: width 0.4s ease 0s;
+}
+
+.menulist__confirmation i {
+  color: #99E2D0;
 }
 
 .menulist__item {
   cursor: pointer;
 }
-.menulist__item:hover .menulist__price {
-  -webkit-animation: RightLeft 1s ease 0s 1 normal forwards;
-          animation: RightLeft 1s ease 0s 1 normal forwards;
-  padding-right: 3rem;
+.menulist__item:hover {
+  cursor: pointer;
 }
 .menulist__item:hover .menulist__confirmation {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3rem;
-  background-color: #99E2D0;
-  border-radius: 0 20px 20px 0;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  right: 0;
+  width: 4rem;
   color: #99E2D0;
-  -webkit-animation: RightLeft 1s ease 0s 1 normal forwards;
-          animation: RightLeft 1s ease 0s 1 normal forwards;
 }
 .menulist__item:hover .menulist__confirmation i {
   width: 1.5rem;
@@ -66,43 +66,6 @@
           animation: rotation 400ms linear;
 }
 
-@-webkit-keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-@-webkit-keyframes RightLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes RightLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 body {
   font-family: sans-serif;
   margin: 0;
@@ -438,7 +401,8 @@ a {
   display: flex;
   max-width: 100%;
   margin: 1rem 0;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
+  height: 3rem;
   background-color: #FFF;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   border-radius: 20px;
@@ -447,7 +411,7 @@ a {
 .menulist__text {
   width: 90%;
   font-family: Roboto;
-  margin: 0;
+  margin: 0.2rem 0.5rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -476,7 +440,7 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-left: 0.5rem;
+  padding-right: 1rem;
 }
 
 @media screen and (min-width: 1400px) {
