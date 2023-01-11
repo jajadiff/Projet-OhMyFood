@@ -70,20 +70,20 @@ a{
         font-family: Roboto,'sans-serif';
     }
     &__item{
-        display: flex; 
+        display: flex;
         max-width: 100%;
         margin: 1rem 0;
-        padding: .5rem;
-        background-color: $color-white;
+        /* padding: 0.5rem; */
+        height: 3rem;
+        background-color: #FFF;
         box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
         border-radius: 20px;
         position: relative;
-
     }
     &__text{
         width: 90%;
         font-family: Roboto;
-        margin: 0;       
+        margin: 0.2rem 0.5rem;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
