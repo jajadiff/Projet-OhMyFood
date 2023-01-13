@@ -1,0 +1,31 @@
+//homecard//
+.heart{
+    .fa-solid{
+        color: transparent;
+        transform: scaleY(0);
+       
+    }
+    &:hover{
+        .fa-solid{           
+        transform: scaleY(1);
+        transition: transform 0.3s ease-in-out;
+        background-image: linear-gradient(0deg,rgba(147,86,220,.7),rgba(255,121,218,.7));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+        .fa-regular{
+            color: transparent;
+        }
+    }
+  
+
+}
+
+//resto title//
+.resto__name{
+    .fa-regular {
+        position: absolute;
+    }
+}
+
+
