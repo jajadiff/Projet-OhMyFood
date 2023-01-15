@@ -99,6 +99,82 @@
   position: absolute;
 }
 
+.menulist__item {
+  -webkit-animation: delay123456789 0.6s;
+          animation: delay123456789 0.6s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.53, 0.87);
+          animation-timing-function: cubic-bezier(0.5, 1.58, 0.53, 0.87);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.delay1 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.delay2 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.delay3 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.delay4 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.delay5 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.delay6 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.delay7 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.delay8 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.delay9 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.delay10 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+@-webkit-keyframes delay123456789 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes delay123456789 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .loader {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.322);
