@@ -78,6 +78,9 @@ body {
         text-align: center;
         color: $color-white;
     }
+    &__textnumber{
+        margin: 0.1rem;
+    }
     &__bg{
         padding: 1.5rem;
         width: 80%;
