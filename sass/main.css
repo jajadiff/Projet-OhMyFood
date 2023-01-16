@@ -333,6 +333,9 @@ body {
   text-align: center;
   color: #FFF;
 }
+.fonction__textnumber {
+  margin: 0.1rem;
+}
 .fonction__bg {
   padding: 1.5rem;
   width: 80%;
