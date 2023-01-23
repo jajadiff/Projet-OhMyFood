@@ -80,6 +80,23 @@
           animation: rotation 400ms linear;
 }
 
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 .heart .fa-solid {
   color: transparent;
   transform: scaleY(0);
